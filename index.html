@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./build/css/app.css" />
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <header class="logo">
+            <img src="./build/img/logo.svg" alt="logo" />
+        </header>
+        <main class="app container">
+            <div class="data__entry">
+                <form action="" class="form">
+                    <!-- Bills section -->
+                    <div class="input__group">
+                        <div class="input__title">
+                            <label>Bill</label>
+                            <p id="alert__bill" class="d-none">Can't be zero</p>
+                        </div>
+                        <div class="search">
+                            <input
+                                class="data"
+                                type="number"
+                                name="bill"
+                                placeholder="00.00"
+                                id="bill"
+                            />
+                            <img
+                                src="./build/img/icon-dollar.svg"
+                                alt="dollar icon"
+                                class="data__icon"
+                            />
+                        </div>
+                    </div>
+                    <!-- Tip section -->
+                    <div class="input__group">
+                        <div class="input__title">
+                            <label>Select Tip %</label>
+                            <p id="alert__custom" class="d-none">Can't be zero</p>
+                        </div>
+                        <div class="tip__btns">
+                            <button class="btn btn__tip" value="5">5%</button>
+                            <button class="btn btn__tip" value="10">10%</button>
+                            <button class="btn btn__tip" value="15">15%</button>
+                            <button class="btn btn__tip" value="25">25%</button>
+                            <button class="btn btn__tip" value="50">50%</button>
+                            <input
+                                type="number"
+                                class="custom"
+                                placeholder="Custom"
+                                id="custom__tip"
+                            />
+                        </div>
+                    </div>
+                    <!-- People section -->
+                    <div class="input__group">
+                        <div class="input__title">
+                            <label>Number of People</label>
+                            <p id="alert__people" class="d-none">Can't be zero</p>
+                        </div>
+                        <div class="search">
+                            <input
+                                class="data"
+                                type="number"
+                                name="bill"
+                                id="people"
+                                placeholder="00.00"
+                            />
+                            <img
+                                src="./build/img/icon-person.svg"
+                                alt="dollar icon"
+                                class="data__icon icon"
+                            />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="data__output">
+                <form action="" class="form">
+                    <!-- Result section -->
+                    <div class="input__group">
+                        <div class="results">
+                            <!-- Amount -->
+                            <div class="result__data">
+                                <h4>Tip Amount</h4>
+                                <br />
+                                <small>/ person</small>
+                            </div>
+                            <p class="dollar">
+                                $ <span id="amount">0.00</span>
+                            </p>
+                            <!-- Total -->
+                            <div class="result__data">
+                                <h4>Total</h4>
+                                <br />
+                                <small>/ person</small>
+                            </div>
+                            <p class="dollar">$ <span id="total">0.00</span></p>
+                            <button class="btn btn__total" id="reset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <script src="./build/js/index.js"></script>
+    </body>
+</html>

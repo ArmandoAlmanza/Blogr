@@ -1,0 +1,27 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: $normal;
+    font-size: 1.6rem;
+}
+p {
+    font-size: 1.6rem;
+}
+.container {
+    width: 950%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $White;
+}
+
+img {
+    max-width: 100%;
+}
