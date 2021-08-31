@@ -8,3 +8,11 @@
 .d-block {
     display: block;
 }
+.clearfix {
+    overflow: auto;
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

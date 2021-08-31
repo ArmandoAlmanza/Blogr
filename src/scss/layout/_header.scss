@@ -1,6 +1,4 @@
 .header {
-    display: flex;
-    justify-content: space-between;
     padding: 6rem;
     background-color: rgb(255, 61, 84);
     background: url("../img/bg-pattern-intro.svg") 25% 52%,
@@ -12,24 +10,34 @@
     background-position: center center;
     border-bottom-left-radius: 15%;
 }
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+        flex-direction: row;
+    }
+}
 .header__navbar {
     overflow: hidden;
     .logo {
         height: 6rem;
+        float: left;
     }
 }
 .dropdown {
     margin-left: 5rem;
-    float: right;
+    float: left;
     overflow: hidden;
     margin-top: 2rem;
     &:hover {
-        .dropdown-content {
+        .dropdown__content {
             display: block;
         }
     }
 }
-.dropdown-content {
+.dropdown__content {
     display: none;
     position: absolute;
     background-color: $White;
@@ -48,15 +56,17 @@
         padding: 1.2rem;
         &:hover {
             color: #000;
-            .dropdown__btn {
-                color: $White;
-                border-bottom: 1px solid $White;
-                img {
-                    transition: all 0.3s ease-in-out;
-                    transform: rotate(0.5turn);
-                }
-            }
+            font-weight: bolder;
         }
+    }
+}
+.dropdown__content:hover,
+.dropdown:hover .dropdown__btn {
+    color: $White;
+    border-bottom: 1px solid $White;
+    img {
+        transition: all 0.3s ease-in-out;
+        transform: rotate(0.5turn);
     }
 }
 .dropdown__btn {
@@ -79,6 +89,39 @@
         }
     }
 }
-
+.login {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+        margin-top: 0;
+    }
+}
+.btn__header {
+    margin-top: 2rem;
+    border: none;
+    background: transparent;
+    // background-color: $Grayish-blue;
+    font-size: 2rem;
+    color: $White;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        background-color: $Light-red;
+        border-radius: 15px;
+    }
+    @include desktop {
+        margin: 0 3rem;
+    }
+}
+.btn__white{
+    transition: all .3s ease-in-out;
+    &:hover{
+        color: $Light-red;
+        background-color: $White;
+    }
+}
 // background: rgb(44,45,63);
 // background: linear-gradient(166deg, rgba(44,45,63,1) 0%, rgba(63,65,100,1) 71%);

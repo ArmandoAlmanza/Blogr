@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"index.js","sourcesContent":[]}
+{"version":3,"sources":["index.js"],"names":["document","addEventListener","App"],"mappings":"AAAAA,SAAAC,iBAAA,mBAAA,KACAC,QAGA,MAAAA,IAAA","file":"index.js","sourcesContent":["document.addEventListener(\"DOMContentLoaded\", () => {\r\n    App();\r\n});\r\n\r\nconst App = () => {\r\n    \r\n};\r\n"]}

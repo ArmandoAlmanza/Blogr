@@ -10,31 +10,73 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__navbar">
-                <img class="logo" src="./build/img/logo.svg" alt="Logo" />
-                <!-- Dropdown Product -->
-                <div class="dropdown">
-                    <button class="dropdown__btn">
-                        Product
+            <div class="navigation">
+                <div>
+                    <div class="header__navbar clearfix">
                         <img
-                            src="./build/img/icon-arrow-light.svg"
-                            alt="arrow"
+                            class="logo"
+                            src="./build/img/logo.svg"
+                            alt="Logo"
                         />
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+
+                        <!-- Dropdown Product -->
+                        <div class="dropdown clearfix">
+                            <button class="dropdown__btn">
+                                Product
+                                <img
+                                    src="./build/img/icon-arrow-light.svg"
+                                    alt="arrow"
+                                />
+                            </button>
+                            <div class="dropdown__content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <!-- Dropdown Company -->
+                        <div class="dropdown clearfix">
+                            <button class="dropdown__btn">
+                                Company
+                                <img
+                                    src="./build/img/icon-arrow-light.svg"
+                                    alt="arrow"
+                                />
+                            </button>
+                            <div class="dropdown__content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <!-- Dropdown Connect -->
+                        <div class="dropdown clearfix">
+                            <button class="dropdown__btn">
+                                Connect
+                                <img
+                                    src="./build/img/icon-arrow-light.svg"
+                                    alt="arrow"
+                                />
+                            </button>
+                            <div class="dropdown__content">
+                                <a href="#">Contact</a>
+                                <a href="#">Newsletter</a>
+                                <a href="#">Linkedln</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Dropdown Company -->
-                <div class="dropdown">
-                    <button class="dropdown__btn">Company</button>
+                <div class="login">
+                    <button class="btn__header">Login</button>
+                    <button class="btn__header">Sign Up</button>
                 </div>
-                <!-- Dropdown Connect -->
-                <div class="dropdown">
-                    <button class="dropdown__btn">Connect</button>
-                </div>
+            </div>
+
+            <div class="hero">
+                <h1>A modern publishing platform</h1>
+                <p>Grow your audience and build your online brand</p>
+                <button class="btn__header">Start for Free</button>
+                <button class="btn__header btn__white">Learn More</button>
             </div>
         </header>
         <script src="./build/js/index.js"></script>
