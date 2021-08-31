@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem;
+    background-color: rgb(255, 61, 84);
+    background: url("../img/bg-pattern-intro.svg") 25% 52%,
+        linear-gradient(
+            166deg,
+            rgba(255, 143, 112, 1) 17%,
+            rgba(255, 61, 84, 1) 100%
+        );
+    background-position: center center;
+    border-bottom-left-radius: 15%;
+}
+.header__navbar {
+    overflow: hidden;
+    .logo {
+        height: 6rem;
+    }
+}
+.dropdown {
+    margin-left: 5rem;
+    float: right;
+    overflow: hidden;
+    margin-top: 2rem;
+    &:hover {
+        .dropdown-content {
+            display: block;
+        }
+    }
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $White;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    a {
+        color: $Very-dark-grayish-blue;
+        text-align: center;
+        font-size: 1.5rem;
+        transition: all 0.2s ease-in-out;
+        float: none;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        padding: 1.2rem;
+        &:hover {
+            color: #000;
+            .dropdown__btn {
+                color: $White;
+                border-bottom: 1px solid $White;
+                img {
+                    transition: all 0.3s ease-in-out;
+                    transform: rotate(0.5turn);
+                }
+            }
+        }
+    }
+}
+.dropdown__btn {
+    background: transparent;
+    display: block;
+    border: none;
+    color: $Grayish-blue;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+    img {
+        height: 1rem;
+    }
+    &:hover {
+        cursor: pointer;
+        color: $White;
+        border-bottom: 1px solid $White;
+        img {
+            transition: all 0.3s ease-in-out;
+            transform: rotate(0.5turn);
+        }
+    }
+}
+
+// background: rgb(44,45,63);
+// background: linear-gradient(166deg, rgba(44,45,63,1) 0%, rgba(63,65,100,1) 71%);

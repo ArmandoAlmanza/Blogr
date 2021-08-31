@@ -19,9 +19,14 @@ p {
     width: 950%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: $White;
 }
 
 img {
     max-width: 100%;
+}
+h1, h1, h3, h4{
+    color: $Very-dark-blue;
+}
+a{
+    text-decoration: none;
 }
